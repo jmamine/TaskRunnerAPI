@@ -1,0 +1,70 @@
+[project]
+name = "flask-docker-api"
+version = "0.1.0"
+description = "A Flask API for managing Docker containers."
+readme = "HELP.md"
+requires-python = ">=3.12.2"
+authors = [
+    {name = "malek mohammed amine", email = "jm_malek@esi.dz"}
+]
+license = {text = "esi"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: BIGmama-technology",
+    "Programming Language :: Python :: 3",
+    "Framework :: Flask",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "APScheduler==3.10.4",
+    "blinker==1.8.2",
+    "certifi==2024.7.4",
+    "charset-normalizer==3.3.2",
+    "click==8.1.7",
+    "colorama==0.4.6",
+    "docker==7.1.0",
+    "Flask==3.0.3",
+    "idna==3.7",
+    "itsdangerous==2.2.0",
+    "Jinja2==3.1.4",
+    "MarkupSafe==2.1.5",
+    "numpy==2.0.0",
+    "pandas==2.2.2",
+    "python-dateutil==2.9.0.post0",
+    "python-dotenv==1.0.1",
+    "pytz==2024.1",
+    "pywin32==306",
+    "requests==2.32.3",
+    "setuptools==70.3.0",
+    "six==1.16.0",
+    "tzdata==2024.1",
+    "tzlocal==5.2",
+    "urllib3==2.2.2",
+    "Werkzeug==3.0.3",
+    "wheel==0.43.0"
+]
+
+[project.optional-dependencies.dev]
+dev = [
+    "pytest>=6.0",
+    "flake8>=3.8",
+    "black>=22.0",
+    "mypy>=0.800",
+]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
